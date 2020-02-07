@@ -1,0 +1,13 @@
+.live-preview .svg {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  -webkit-transform: translateY(calc(1 / 6 * 100%));
+          transform: translateY(calc(1 / 6 * 100%));
+}
+
+.live-preview .svg:hover {
+  -webkit-transform: translateY(calc(1 / 6 * 100%));
+          transform: translateY(calc(1 / 6 * 100%));
+}
+/*# sourceMappingURL=LivePreview.css.map */

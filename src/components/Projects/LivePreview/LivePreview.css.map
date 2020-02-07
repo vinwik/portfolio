@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,aADW,CACX,IAAI,CAAC;EACH,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,8BAA8B;CAO1C;;AAZH,AAOI,aAPS,CACX,IAAI,AAMD,MAAM,CAAC;EACN,SAAS,EAAE,8BAEV;CACF",
+    "sources": [
+        "LivePreview.scss"
+    ],
+    "names": [],
+    "file": "LivePreview.css"
+}

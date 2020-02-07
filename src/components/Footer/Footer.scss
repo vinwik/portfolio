@@ -1,0 +1,25 @@
+footer {
+  .wrapper {
+    text-align: center;
+  }
+
+  .social {
+    padding: 40px;
+    border-bottom: 1px solid var(--color-main-lighten);
+
+    .icon {
+      padding: 10px;
+      margin: 0 10px;
+    }
+  }
+
+  .copy {
+    color: var(--color-secondary);
+    font-weight: 200;
+    font-size: 14px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+}

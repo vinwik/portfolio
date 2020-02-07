@@ -1,0 +1,74 @@
+main {
+  height: 100vh;
+  background: url(bg.jpg) no-repeat center/cover;
+
+  .bg {
+    height: 100%;
+    background-color: rgba($color: #282c34, $alpha: 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h1,
+  h2 {
+    text-transform: uppercase;
+  }
+
+  .icon {
+    margin-right: 20px;
+
+    .svg {
+      height: 25px;
+      width: 25px;
+      padding: 0;
+      margin-top: 40px;
+      transform: unset;
+    }
+  }
+
+  .angle-down {
+    position: absolute;
+    bottom: 40px;
+
+    .svg {
+      animation: translate 2s infinite;
+    }
+
+    .svg path {
+      animation: fill 2s infinite;
+    }
+
+    @keyframes translate {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(5px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fill {
+      0% {
+        fill: #fff;
+      }
+
+      50% {
+        fill: var(--color-accent);
+      }
+
+      100% {
+        fill: #fff;
+      }
+    }
+  }
+}

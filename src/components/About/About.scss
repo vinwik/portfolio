@@ -1,0 +1,22 @@
+.about {
+  background: var(--color-main-lighten);
+  background: var(--color-gradient);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 5%;
+
+  .profile {
+    width: 50%;
+    text-align: center;
+  }
+
+  .img-fluid {
+    width: 250px;
+    height: auto;
+    border: 5px solid var(--color-accent);
+    border-radius: 50%;
+  }
+
+  .description {
+    width: 50%;
+  }
+}

@@ -1,0 +1,14 @@
+.live-preview {
+  .svg {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    transform: translateY(calc(1 / 6 * 100%)); // svg viewbox has 1/3 of padding
+
+    &:hover {
+      transform: translateY(
+        calc(1 / 6 * 100%)
+      ); //unsets translate on svg hover from app.css
+    }
+  }
+}

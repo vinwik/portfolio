@@ -1,0 +1,24 @@
+.about {
+  background: var(--color-main-lighten);
+  background: var(--color-gradient);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 5%;
+}
+
+.about .profile {
+  width: 50%;
+  text-align: center;
+}
+
+.about .img-fluid {
+  width: 250px;
+  height: auto;
+  border: 5px solid var(--color-accent);
+  border-radius: 50%;
+}
+
+.about .description {
+  width: 50%;
+}
+/*# sourceMappingURL=About.css.map */

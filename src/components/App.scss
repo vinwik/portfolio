@@ -1,0 +1,127 @@
+.App {
+  background: var(--color-main);
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.section-title {
+  width: 50%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-main-lighten);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  user-select: none;
+  margin-top: 40px;
+  padding: 5px 20px;
+  border: 2px solid #fff;
+  // border-radius: 1px;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &::before {
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-out;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+
+  &:hover {
+    color: var(--color-main);
+  }
+}
+
+.btn-accent {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+
+  &::before {
+    background-color: var(--color-accent);
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.svg path {
+  fill: #fff;
+  transition: fill 0.2s ease-in-out;
+}
+
+.svg {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+  &:hover path {
+    fill: var(--color-accent);
+  }
+}
+
+.link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}
