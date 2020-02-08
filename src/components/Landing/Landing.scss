@@ -1,6 +1,7 @@
 main {
   height: 100vh;
   background: url(bg.jpg) no-repeat center/cover;
+  background-attachment: fixed;
 
   .bg {
     height: 100%;
