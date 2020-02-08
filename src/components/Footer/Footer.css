@@ -3,13 +3,13 @@ footer .wrapper {
 }
 
 footer .social {
-  padding: 40px;
+  padding: 40px 0;
   border-bottom: 1px solid var(--color-main-lighten);
 }
 
 footer .social .icon {
-  padding: 10px;
-  margin: 0 10px;
+  padding: 5px;
+  margin: 0 5px;
 }
 
 footer .copy {

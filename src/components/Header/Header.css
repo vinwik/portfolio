@@ -7,4 +7,10 @@ header {
   margin: 0;
   z-index: 10;
 }
+
+header .logo {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
 /*# sourceMappingURL=Header.css.map */
