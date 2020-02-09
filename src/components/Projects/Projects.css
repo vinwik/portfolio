@@ -15,11 +15,6 @@
   margin-bottom: 10px;
 }
 
-.projects .description p,
-.projects .description ul {
-  font-weight: 200;
-}
-
 .projects .description ul {
   font-size: 14px;
   color: var(--color-secondary);

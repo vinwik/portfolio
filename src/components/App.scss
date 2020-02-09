@@ -24,10 +24,6 @@
   padding: 80px 0;
 }
 
-p {
-  margin-bottom: 10px;
-}
-
 .btn {
   display: inline-block;
   user-select: none;
@@ -35,6 +31,7 @@ p {
   padding: 5px 20px;
   border: 2px solid #fff;
   border-radius: 2px;
+  box-shadow: 0 0 10px #111;
   position: relative;
   z-index: 1;
   transition: color 0.3s ease-out;
@@ -71,10 +68,6 @@ p {
 
   &::before {
     background-color: var(--color-accent);
-  }
-
-  &:hover {
-    color: #fff;
   }
 }
 
@@ -121,6 +114,11 @@ p {
 @media only screen and (max-width: 900px) {
   header {
     position: absolute;
+
+    .logo {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   .wrapper {
@@ -190,7 +188,20 @@ p {
     padding-bottom: unset;
   }
 
+  .section-title {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 20px 0 40px 0;
+  }
+
   .projects {
+    .content {
+      padding: 20px 0 20px 0;
+    }
     .screenshot {
       margin: 20px 0 20px 0;
     }
@@ -205,14 +216,5 @@ p {
     .wrapper {
       padding: 10px 0;
     }
-  }
-
-  .section-title {
-    padding-bottom: 20px;
-  }
-
-  .content {
-    flex-direction: column;
-    padding: 20px 0;
   }
 }

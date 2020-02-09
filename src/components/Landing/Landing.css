@@ -2,6 +2,7 @@ main {
   height: 100vh;
   background: url(bg.jpg) no-repeat center/cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 main .bg {
@@ -20,11 +21,16 @@ main .bg {
 
 main p {
   margin: 0;
+  font-weight: unset;
 }
 
 main h1,
 main h2 {
   text-transform: uppercase;
+}
+
+main h1 span {
+  font-weight: 900;
 }
 
 main .icon {

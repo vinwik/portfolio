@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="wrapper">
-        <a href="#landing" className="svg" aria-label="Back to top">
+        <a href="#landing" className="angle-up" aria-label="Back to top">
           <Angle className="svg" />
         </a>
         <Social />
         <p className="copy">
-          ©{new Date().getFullYear()} Made by <span>Vincent Wikart</span>. All
-          Rights Reserved.
+          &copy; {new Date().getFullYear()} Made by <span>Vincent Wikart</span>.
+          All Rights Reserved.
         </p>
       </div>
     </footer>
