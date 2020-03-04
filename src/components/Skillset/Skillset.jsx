@@ -8,7 +8,7 @@ import { ReactComponent as NodeLogo } from "./node.svg";
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
-const WordClouds = () => {
+const SkillWords = () => {
   return (
     <Parallax
       y={["-300px", "-180px"]}
@@ -45,7 +45,7 @@ const Skillset = () => {
               <NodeLogo />
             </div>
             <div className="skill-words">
-              <WordClouds />
+              <SkillWords />
             </div>
           </div>
         </div>
