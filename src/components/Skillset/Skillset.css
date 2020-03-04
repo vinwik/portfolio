@@ -1,0 +1,43 @@
+.skillset .content {
+  display: block;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.skillset .skill-icons {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+}
+
+.skillset .skill-icons svg {
+  height: 7em;
+  margin: 0 1em;
+}
+
+.skillset .skill-icons path {
+  fill: var(--color-accent);
+}
+
+.skillset .skill-words p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-weight: 900;
+  opacity: 0.2;
+}
+
+@media only screen and (max-width: 900px) {
+  .skillset .skill-words {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Skillset.css.map */

@@ -23,7 +23,7 @@ const About = () => {
               Counter Strike!).
             </p>
             <p>
-              However, Life led me to Finance, for to long... <br />
+              However, Life led me to Finance, for too long... <br />
               But, here I am! Back on track and determined to follow my path.
             </p>
             <p>

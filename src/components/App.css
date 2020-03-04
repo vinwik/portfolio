@@ -212,10 +212,6 @@
     margin-bottom: 10px;
   }
   .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding: 20px 0 40px 0;
   }
   .projects .content {
