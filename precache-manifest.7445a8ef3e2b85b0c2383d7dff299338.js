@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aad7d7d9b06986ab306c4191ed827df1",
+    "revision": "ba91f26c876414e60e442a3e0c6c8567",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "c82bcdc3afea9a87d3ea",
-    "url": "/portfolio/static/css/main.2073e63b.chunk.css"
+    "revision": "d87c28ccb40c7868fe2a",
+    "url": "/portfolio/static/css/main.8f7d44f3.chunk.css"
   },
   {
-    "revision": "8d68aa7b6e9f74e8a9c1",
-    "url": "/portfolio/static/js/2.3a2f2e9c.chunk.js"
+    "revision": "53fce9267a04b88ec123",
+    "url": "/portfolio/static/js/2.9f0d0072.chunk.js"
   },
   {
     "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
-    "url": "/portfolio/static/js/2.3a2f2e9c.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.9f0d0072.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c82bcdc3afea9a87d3ea",
-    "url": "/portfolio/static/js/main.842ae7ca.chunk.js"
+    "revision": "d87c28ccb40c7868fe2a",
+    "url": "/portfolio/static/js/main.ffe23beb.chunk.js"
   },
   {
     "revision": "0d98471f6c3b69ca4251",
@@ -52,6 +52,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/github.f5a069d2.svg"
   },
   {
+    "revision": "580a57ca831e2f4e7732f5e8f17b5297",
+    "url": "/portfolio/static/media/html5.580a57ca.svg"
+  },
+  {
+    "revision": "b2bb28d76fb3d6bb797697427a7776cc",
+    "url": "/portfolio/static/media/js.b2bb28d7.svg"
+  },
+  {
     "revision": "22bd17393aa39a4cfec33c206db5f0df",
     "url": "/portfolio/static/media/linkedin-in.22bd1739.svg"
   },
@@ -60,8 +68,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/logo.4e1194ab.svg"
   },
   {
+    "revision": "271dda2634e693c2b3ed5a0c4a96250a",
+    "url": "/portfolio/static/media/node.271dda26.svg"
+  },
+  {
     "revision": "43ba411782e729aba160d52be718c13a",
     "url": "/portfolio/static/media/profile.43ba4117.jpg"
+  },
+  {
+    "revision": "3ece720a0831e851fbe789681bfa1c55",
+    "url": "/portfolio/static/media/react.3ece720a.svg"
   },
   {
     "revision": "9a11e9b9542846fd1d519d25279ca311",
