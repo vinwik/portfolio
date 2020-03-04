@@ -14,7 +14,6 @@ const WordClouds = () => {
       y={["-300px", "-180px"]}
       slowerScrollRate={true}
       aria-hidden="true"
-      // className="skill-words"
     >
       <p style={{ top: 80, left: "10%" }}>CSS3</p>
       <p style={{ top: 70, left: "45%" }}>SASS</p>
@@ -45,7 +44,6 @@ const Skillset = () => {
               <ReactLogo />
               <NodeLogo />
             </div>
-
             <div className="skill-words">
               <WordClouds />
             </div>

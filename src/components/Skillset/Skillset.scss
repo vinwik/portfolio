@@ -1,8 +1,6 @@
 .skillset {
-  // position: relative;
   .content {
-    // flex-direction: column;
-    // position: relative;
+    position: relative;
     display: block;
     margin-top: 80px;
     margin-bottom: 20px;
@@ -31,7 +29,6 @@
       position: absolute;
       left: 0;
       right: 0;
-      // text-transform : uppercase;
       font-weight: 900;
       opacity: 0.2;
     }
