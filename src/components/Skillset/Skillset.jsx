@@ -11,7 +11,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 const SkillWords = () => {
   return (
     <Parallax
-      y={["-300px", "-180px"]}
+      y={["-300px", "-190px"]}
       slowerScrollRate={true}
       aria-hidden="true"
     >
