@@ -1,62 +1,67 @@
 import React from "react";
+import "./Projects.css";
+
+import { projectsData } from "./data";
+
 import LiveBtn from "./LiveBtn/LiveBtn";
 import LivePreview from "./LivePreview/LivePreview";
-import weatherapp from "./weather-app.jpg";
-import "./Projects.css";
 
 const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div className="wrapper">
         <h1 className="section-title">Projects</h1>
-        <div className="content">
-          <div className="description">
-            <h3>Weather App</h3>
-            <p>
-              Nice Home page with weather real time weather, access to my main
-              Social Apps, and Search bar for Google and YouTube
-            </p>
-            <ul>
-              <li>Vanilla JS</li>
-              <li>OpenWeather API</li>
-              <li>ES8 Async/Await</li>
-            </ul>
-            <div>
+        {projectsData.map(project => {
+          const { title, description, infoList, url, repo, img } = project;
+
+          return (
+            <div className="content" key={title}>
+              <div className="description">
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <ul>
+                  {infoList.map(li => {
+                    const { info } = li;
+                    return <li key={info}>{info}</li>;
+                  })}
+                </ul>
+                <div>
+                  <a href={url} target="_blank" rel="noopener noreferrer">
+                    <LiveBtn />
+                  </a>
+                  {// will not show source code link if no repo
+                  repo !== undefined && (
+                    <a
+                      href={repo}
+                      className="link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Source Code
+                    </a>
+                  )}
+                </div>
+              </div>
               <a
-                href="https://vinwik.github.io/weather-app/"
+                href={url}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="screenshot"
               >
-                <LiveBtn />
-              </a>
-              <a
-                href="https://github.com/vinwik/weather-app"
-                className="link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Source Code
+                <img
+                  className="img-fluid"
+                  src={img}
+                  alt="weather-app"
+                  target="_blank"
+                  rel="noreferrer"
+                />
+                <h3 className="inner-text">
+                  <LivePreview />
+                </h3>
               </a>
             </div>
-          </div>
-          <a
-            href="https://vinwik.github.io/weather-app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="screenshot"
-          >
-            <img
-              className="img-fluid"
-              src={weatherapp}
-              alt="weather-app"
-              target="_blank"
-              rel="noreferrer"
-            />
-            <h3 className="inner-text">
-              <LivePreview />
-            </h3>
-          </a>
-        </div>
+          );
+        })}
       </div>
     </section>
   );
