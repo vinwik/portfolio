@@ -10,6 +10,7 @@ import { ReactComponent as NodeLogo } from "./node.svg";
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import ScrollableAnchor from "react-scrollable-anchor";
+import Fade from "react-reveal/Fade";
 
 const SkillWords = () => {
   return (
@@ -46,15 +47,17 @@ const Skillset = () => {
           <div className="wrapper">
             <Title title="skillset" />
             <div className="content">
-              <div className="skill-icons">
-                <HtmlLogo />
-                <JsLogo />
-                <ReactLogo />
-                <NodeLogo />
-              </div>
-              <div className="skill-words">
-                <SkillWords />
-              </div>
+              <Fade>
+                <div className="skill-icons">
+                  <HtmlLogo />
+                  <JsLogo />
+                  <ReactLogo />
+                  <NodeLogo />
+                </div>
+                <div className="skill-words">
+                  <SkillWords />
+                </div>
+              </Fade>
             </div>
           </div>
         </section>
