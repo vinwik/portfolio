@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../Title/Title";
 import "./Contact.css";
 
 import ScrollableAnchor from "react-scrollable-anchor";
@@ -8,7 +9,7 @@ const Contact = () => {
     <ScrollableAnchor id="contact">
       <section className="contact">
         <div className="wrapper">
-          <h1 className="section-title">Contact</h1>
+          <Title title="contact" />
           <div className="content">
             <div className="description">
               <h3>Convinced yet?</h3>

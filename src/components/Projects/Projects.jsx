@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 
 import { projectsData } from "./data";
+import Title from "../Title/Title";
 
 import LiveBtn from "./LiveBtn/LiveBtn";
 import LivePreview from "./LivePreview/LivePreview";
@@ -13,7 +14,7 @@ const Projects = () => {
     <ScrollableAnchor id="projects">
       <section className="projects">
         <div className="wrapper">
-          <h1 className="section-title">Projects</h1>
+          <Title title="projects" />
           {projectsData.map(project => {
             const { title, description, infoList, url, repo, img } = project;
 

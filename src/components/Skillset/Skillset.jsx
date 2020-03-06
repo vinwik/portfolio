@@ -1,6 +1,8 @@
 import React from "react";
 import "./Skillset.css";
 
+import Title from "../Title/Title";
+
 import { ReactComponent as HtmlLogo } from "./html5.svg";
 import { ReactComponent as JsLogo } from "./js.svg";
 import { ReactComponent as ReactLogo } from "./react.svg";
@@ -42,7 +44,7 @@ const Skillset = () => {
       <ParallaxProvider>
         <section className="skillset">
           <div className="wrapper">
-            <h1 className="section-title">Skillset</h1>
+            <Title title="skillset" />
             <div className="content">
               <div className="skill-icons">
                 <HtmlLogo />

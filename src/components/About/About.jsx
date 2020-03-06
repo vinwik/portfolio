@@ -1,5 +1,6 @@
 import React from "react";
 import profile from "./profile.jpg";
+import Title from "../Title/Title";
 import "./About.css";
 
 import ScrollableAnchor from "react-scrollable-anchor";
@@ -9,7 +10,7 @@ const About = () => {
     <ScrollableAnchor id="about">
       <section className="about">
         <div className="wrapper">
-          <h1 className="section-title">About</h1>
+          <Title title="about" />
           <div className="content">
             <div className="profile">
               <img className="img-fluid" src={profile} alt="Vincent Wikart" />
