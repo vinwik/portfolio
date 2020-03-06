@@ -7,7 +7,14 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="wrapper">
-        <a href="#landing" className="angle-up" aria-label="Back to top">
+        <a
+          href="#"
+          className="angle-up"
+          aria-label="Back to top"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
           <Angle className="svg" />
         </a>
         <Social />
