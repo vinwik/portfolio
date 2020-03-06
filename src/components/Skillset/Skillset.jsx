@@ -12,11 +12,11 @@ import ScrollableAnchor from "react-scrollable-anchor";
 const SkillWords = () => {
   return (
     <Parallax
-      y={["-220px", "-300px"]}
+      y={["-220px", "-305px"]}
       slowerScrollRate={true}
       aria-hidden="true"
     >
-      <Parallax y={["50px", "-50px"]}>
+      <Parallax y={["40px", "-40px"]}>
         <p style={{ top: 80, left: "10%" }}>CSS3</p>
         <p style={{ top: 120, left: "22%" }}>Adobe XD</p>
         <p style={{ top: 70, left: "45%" }}>SASS</p>
@@ -25,9 +25,9 @@ const SkillWords = () => {
         <p style={{ top: 150, left: "95%" }}>ES6</p>
       </Parallax>
       <p style={{ top: 170, left: -50 }}>Illustrator</p>
-      <Parallax y={["20px", "0px"]}>
+      <Parallax y={["30px", "20px"]}>
         <p style={{ top: 280, left: "5%" }}>Hooks</p>
-        <p style={{ top: 310, left: "18%" }}>mongoDB</p>
+        <p style={{ top: 320, left: "18%" }}>mongoDB</p>
         <p style={{ top: 290, left: "40%" }}>postgreSQL</p>
         <p style={{ top: 280, left: "65%" }}>NPM</p>
         <p style={{ top: 300, left: "85%" }}>Gatsby</p>
