@@ -11,7 +11,7 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <React.Fragment>
         <Header />
         <Landing />
         <About />
@@ -19,7 +19,7 @@ class App extends Component {
         <Projects />
         <Contact />
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }
