@@ -8,7 +8,6 @@ import LiveBtn from "./LiveBtn/LiveBtn";
 import LivePreview from "./LivePreview/LivePreview";
 
 import ScrollableAnchor from "react-scrollable-anchor";
-import Fade from "react-reveal/Fade";
 
 const Projects = () => {
   return (
