@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./Skillset.css";
 
 import Title from "../Title/Title";
@@ -9,8 +9,22 @@ import { ReactComponent as ReactLogo } from "./react.svg";
 import { ReactComponent as NodeLogo } from "./node.svg";
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import { useController } from "react-scroll-parallax";
 import ScrollableAnchor from "react-scrollable-anchor";
 import Fade from "react-reveal/Fade";
+
+// Updates cached values after reload
+const ParallaxCache = () => {
+  const { parallaxController } = useController();
+
+  useLayoutEffect(() => {
+    const handler = () => parallaxController.update();
+    window.addEventListener("load", handler);
+    return () => window.removeEventListener("load", handler);
+  }, [parallaxController]);
+
+  return null;
+};
 
 const SkillWords = () => {
   return (
@@ -18,6 +32,7 @@ const SkillWords = () => {
       y={["-220px", "-305px"]}
       slowerScrollRate={true}
       aria-hidden="true"
+      onLoad={ParallaxCache()}
     >
       <Parallax y={["40px", "-40px"]}>
         <p style={{ top: 80, left: "10%" }}>CSS3</p>
