@@ -14,7 +14,7 @@ export const projectsData = [
     img: "img/mealize.jpg"
   },
   {
-    title: "Penny Shop",
+    title: "Penny'Shop",
     description:
       "Shop with Penny Shop! We have selected for YOU the best selection of Penny boards. The most famous and portable skateboard is now available at the best price",
     infoList: [
@@ -22,7 +22,7 @@ export const projectsData = [
       { info: "Context API" },
       { info: "Paypal Sandbox" }
     ],
-    url: "https://vinwik.github.io/pennyshop/",
+    url: "https://pennyshop.netlify.com/",
     repo: "https://github.com/vinwik/pennyshop",
     img: "img/pennyshop.jpg"
   },
