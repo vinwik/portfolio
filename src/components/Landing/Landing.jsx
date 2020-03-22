@@ -13,15 +13,15 @@ const Landing = () => {
 
   const [windowHeight, setWindowHeight] = useState(getWindowHeight());
 
-  useEffect(() => {
-    function handleResize() {
-      setWindowHeight(getWindowHeight());
-    }
-    window.addEventListener("resize", handleResize);
-    // return () => {
-    //   window.removeEventListener("resize", handleResize);
-    // };
-  }, []);
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setWindowHeight(getWindowHeight());
+  //   }
+  //   window.addEventListener("resize", handleResize);
+  //   // return () => {
+  //   //   window.removeEventListener("resize", handleResize);
+  //   // };
+  // }, []);
 
   return (
     <main id="landing" style={{ height: `${windowHeight}px` }}>
