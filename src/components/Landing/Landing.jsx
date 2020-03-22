@@ -6,25 +6,22 @@ import "./Landing.css";
 import Fade from "react-reveal/Fade";
 
 const Landing = () => {
-  const getWindowHeight = () => {
-    const vh = window.innerHeight;
-    return vh;
-  };
-
-  const [windowHeight, setWindowHeight] = useState(getWindowHeight());
+  // const getWindowHeight = () => {
+  //   const vh = window.innerHeight;
+  //   return vh;
+  // };
+  // const [windowHeight, setWindowHeight] = useState(null);
 
   // useEffect(() => {
-  //   function handleResize() {
+  //   if (window.innerWidth < 500) {
   //     setWindowHeight(getWindowHeight());
   //   }
-  //   window.addEventListener("resize", handleResize);
-  //   // return () => {
-  //   //   window.removeEventListener("resize", handleResize);
-  //   // };
   // }, []);
 
   return (
-    <main id="landing" style={{ height: `${windowHeight}px` }}>
+    <main
+      id="landing" /*style={windowHeight && { height: `${windowHeight}px` }}*/
+    >
       <div className="bg">
         <div className="wrapper">
           <Fade left>
