@@ -11,24 +11,20 @@ const Landing = () => {
     return vh;
   };
 
-  const useWindowHeight = () => {
-    const [windowHeight, setWindowHeight] = useState(getWindowHeight());
-    useEffect(() => {
-      function handleResize() {
-        setWindowHeight(getWindowHeight());
-      }
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
-    return windowHeight;
-  };
+  const [windowHeight, setWindowHeight] = useState(getWindowHeight());
 
-  const vh = useWindowHeight();
+  useEffect(() => {
+    function handleResize() {
+      setWindowHeight(getWindowHeight());
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
-    <main id="landing" style={{ height: `${vh}px` }}>
+    <main id="landing" style={{ height: `${windowHeight}px` }}>
       <div className="bg">
         <div className="wrapper">
           <Fade left>
