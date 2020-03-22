@@ -1,12 +1,12 @@
 main {
-  height: 100%;
-  min-height: 100vh;
-  background: url(bg.jpg) no-repeat center/cover;
+  height: 100vh;
+
   background-attachment: fixed;
   position: relative;
 
   .bg {
     height: 100%;
+    background: url(bg.jpg) no-repeat center/cover;
     background-color: rgba($color: #282c34, $alpha: 0.8);
     display: flex;
     align-items: center;
