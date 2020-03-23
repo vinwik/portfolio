@@ -6,62 +6,63 @@ import "./Landing.css";
 import Fade from "react-reveal/Fade";
 
 const Landing = () => {
-  const getWindowHeight = () => {
-    const height = window.innerHeight;
-    return height;
-  };
+  // const getWindowHeight = () => {
+  //   const height = window.innerHeight;
+  //   return height;
+  // };
 
-  const getWindowWidth = () => {
-    const width = window.innerWidth;
-    return width;
-  };
+  // const getWindowWidth = () => {
+  //   const width = window.innerWidth;
+  //   return width;
+  // };
 
-  // const windowWidth = window.innerWidth;
+  // // const windowWidth = window.innerWidth;
 
-  const [windowHeight, setWindowHeight] = useState(getWindowHeight());
-  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
-  const [isMobile, setIsMobile] = useState(false);
+  // const [windowHeight, setWindowHeight] = useState(getWindowHeight());
+  // const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+  // const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const mobile = () => {
-      if (window.innerWidth <= 900) {
-        setIsMobile(true);
-      }
-    };
-    mobile();
-    const handleResize = () => {
-      setWindowHeight(getWindowHeight());
-    };
-    // console.log("state", windowWidth);
-    // console.log("window", window.innerWidth);
-    // console.log("height", window.innerHeight);
+  // useEffect(() => {
+  //   const mobile = () => {
+  //     if (window.innerWidth <= 900) {
+  //       setIsMobile(true);
+  //     }
+  //   };
+  //   mobile();
+  //   const handleResize = () => {
+  //     setWindowHeight(getWindowHeight());
+  //     console.log("height", window.innerHeight);
+  //   };
+  //   // console.log("state", windowWidth);
+  //   // console.log("window", window.innerWidth);
+  //   // console.log("height", window.innerHeight);
 
-    const update = () => {
-      // if (windowWidth !== window.innerWidth) {
-      window.addEventListener("orientationchange", handleResize);
-      return () => {
-        window.removeEventListener("orientationchange", handleResize);
-        // };
-      };
-    };
-    update();
-    // if (windowWidth !== window.innerWidth) {
-    //   window.addEventListener("resize", handleResize);
-    //   return () => {
-    //     window.removeEventListener("resize", handleResize);
-    //   };
-    // }
-  }, []);
+  //   const update = () => {
+  //     // if (windowWidth !== window.innerWidth) {
+  //     window.addEventListener("orientationchange", handleResize);
+  //     return () => {
+  //       window.removeEventListener("orientationchange", handleResize);
+  //       // };
+  //     };
+  //   };
+  //   update();
+  //   // if (windowWidth !== window.innerWidth) {
+  //   //   window.addEventListener("resize", handleResize);
+  //   //   return () => {
+  //   //     window.removeEventListener("resize", handleResize);
+  //   //   };
+  //   // }
+  // }, []);
 
-  console.log(windowWidth);
-  console.log(window.innerWidth);
+  // console.log(windowWidth);
+  // console.log(window.innerWidth);
 
-  const style = {
-    height: isMobile && `${windowHeight}px`
-  };
+  // const style = {
+  //   height: isMobile && `${windowHeight}px`
+  // };
 
   return (
-    <main id="landing" style={style}>
+    <main id="landing">
       <div className="bg">
         <div className="wrapper">
           <Fade left>
