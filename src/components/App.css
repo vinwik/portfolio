@@ -193,7 +193,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   main {
     background-image: url(./Landing/bg-mobile.jpg);
     background-attachment: initial;
