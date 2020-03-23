@@ -23,24 +23,26 @@ const Landing = () => {
       id="landing" /*style={windowHeight && { height: `${windowHeight}px` }}*/
     >
       <div className="bg">
-        <div className="wrapper">
-          <Fade left>
-            <p>Hi, I'm</p>
-            <h1>
-              <span>Vincent Wikart</span>,
-            </h1>
-            <h2>Creative Front End Developer.</h2>
-          </Fade>
-          <Fade bottom delay={700}>
-            <a href="#projects" className="btn btn-accent">
-              Jump to projects
-            </a>
-          </Fade>
-          <Social className="icon" fade="1200" />
+        <div className="bg-layer">
+          <div className="wrapper">
+            <Fade left>
+              <p>Hi, I'm</p>
+              <h1>
+                <span>Vincent Wikart</span>,
+              </h1>
+              <h2>Creative Front End Developer.</h2>
+            </Fade>
+            <Fade bottom delay={700}>
+              <a href="#projects" className="btn btn-accent">
+                Jump to projects
+              </a>
+            </Fade>
+            <Social className="icon" fade="1200" />
+          </div>
+          <a href="#about" className="angle-down" aria-label="Go to About">
+            <Angle alt="About me" className="svg" />
+          </a>
         </div>
-        <a href="#about" className="angle-down" aria-label="Go to About">
-          <Angle alt="About me" className="svg" />
-        </a>
       </div>
     </main>
   );

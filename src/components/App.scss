@@ -168,6 +168,10 @@
 
 @media only screen and (max-width: 500px) {
   main {
+    .bg {
+      background-image: url(./Landing/bg-mobile.jpg);
+    }
+
     .angle-down {
       bottom: 10px;
     }
