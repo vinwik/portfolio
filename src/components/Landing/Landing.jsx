@@ -32,7 +32,7 @@ const Landing = () => {
     const handleResize = () => {
       if (windowWidth !== window.innerWidth) {
         setWindowHeight(getWindowHeight());
-        setWindowHeight(getWindowHeight());
+        setWindowWidth(getWindowWidth());
       }
       // console.log("state", windowWidth);
       // console.log("window", window.innerWidth);
@@ -54,7 +54,7 @@ const Landing = () => {
     //     window.removeEventListener("resize", handleResize);
     //   };
     // }
-  }, []);
+  }, [isMobile, windowWidth]);
 
   console.log(windowWidth);
   console.log(window.innerWidth);
