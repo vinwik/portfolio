@@ -32,7 +32,6 @@ const Landing = () => {
     const handleResize = () => {
       if (windowWidth !== window.innerWidth) {
         setWindowHeight(getWindowHeight());
-        setWindowWidth(getWindowWidth());
       }
       // console.log("state", windowWidth);
       // console.log("window", window.innerWidth);
