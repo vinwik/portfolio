@@ -144,6 +144,9 @@
     width: 32px;
     height: 32px;
   }
+  main {
+    background-attachment: initial;
+  }
   .wrapper {
     width: 80%;
   }
@@ -190,8 +193,9 @@
 }
 
 @media only screen and (max-width: 500px) {
-  main .bg {
+  main {
     background-image: url(./Landing/bg-mobile.jpg);
+    background-attachment: initial;
   }
   main .angle-down {
     bottom: 10px;
