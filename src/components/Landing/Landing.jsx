@@ -6,22 +6,64 @@ import "./Landing.css";
 import Fade from "react-reveal/Fade";
 
 const Landing = () => {
-  // const getWindowHeight = () => {
-  //   const vh = window.innerHeight;
-  //   return vh;
-  // };
-  // const [windowHeight, setWindowHeight] = useState(null);
+  const getWindowHeight = () => {
+    const height = window.innerHeight;
+    return height;
+  };
 
-  // useEffect(() => {
-  //   if (window.innerWidth < 500) {
-  //     setWindowHeight(getWindowHeight());
-  //   }
-  // }, []);
+  const getWindowWidth = () => {
+    const width = window.innerWidth;
+    return width;
+  };
+
+  const windowWidth = window.innerWidth;
+
+  const [windowHeight, setWindowHeight] = useState(getWindowHeight());
+  // const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mobile = () => {
+      if (window.innerWidth <= 900) {
+        setIsMobile(true);
+      }
+    };
+    mobile();
+    const handleResize = () => {
+      if (windowWidth !== window.innerWidth) {
+        setWindowHeight(getWindowHeight());
+      }
+      // console.log("state", windowWidth);
+      // console.log("window", window.innerWidth);
+      // console.log("height", window.innerHeight);
+    };
+
+    const update = () => {
+      // if (windowWidth !== window.innerWidth) {
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+        // };
+      };
+    };
+    update();
+    // if (windowWidth !== window.innerWidth) {
+    //   window.addEventListener("resize", handleResize);
+    //   return () => {
+    //     window.removeEventListener("resize", handleResize);
+    //   };
+    // }
+  }, [isMobile, windowWidth]);
+
+  console.log(windowWidth);
+  console.log(window.innerWidth);
+
+  const style = {
+    height: isMobile && `${windowHeight}px`
+  };
 
   return (
-    <main
-      id="landing" /*style={windowHeight && { height: `${windowHeight}px` }}*/
-    >
+    <main id="landing" style={style}>
       <div className="bg">
         <div className="wrapper">
           <Fade left>
