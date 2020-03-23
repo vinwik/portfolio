@@ -146,7 +146,7 @@
   }
   main {
     background-attachment: initial;
-    height: 90vh;
+    height: calc(100vh - 54px);
   }
   .wrapper {
     width: 80%;
