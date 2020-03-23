@@ -30,20 +30,17 @@ const Landing = () => {
     };
     mobile();
     const handleResize = () => {
-      if (windowWidth !== window.innerWidth) {
-        setWindowHeight(getWindowHeight());
-        setWindowWidth(getWindowWidth());
-      }
-      // console.log("state", windowWidth);
-      // console.log("window", window.innerWidth);
-      // console.log("height", window.innerHeight);
+      setWindowHeight(getWindowHeight());
     };
+    // console.log("state", windowWidth);
+    // console.log("window", window.innerWidth);
+    // console.log("height", window.innerHeight);
 
     const update = () => {
       // if (windowWidth !== window.innerWidth) {
-      window.addEventListener("resize", handleResize);
+      window.addEventListener("orientationchange", handleResize);
       return () => {
-        window.removeEventListener("resize", handleResize);
+        window.removeEventListener("orientationchange", handleResize);
         // };
       };
     };
@@ -54,7 +51,7 @@ const Landing = () => {
     //     window.removeEventListener("resize", handleResize);
     //   };
     // }
-  }, [isMobile, windowWidth]);
+  }, []);
 
   console.log(windowWidth);
   console.log(window.innerWidth);
