@@ -16,10 +16,10 @@ const Landing = () => {
     return width;
   };
 
-  const windowWidth = window.innerWidth;
+  // const windowWidth = window.innerWidth;
 
   const [windowHeight, setWindowHeight] = useState(getWindowHeight());
-  // const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -32,6 +32,7 @@ const Landing = () => {
     const handleResize = () => {
       if (windowWidth !== window.innerWidth) {
         setWindowHeight(getWindowHeight());
+        setWindowWidth(getWindowWidth());
       }
       // console.log("state", windowWidth);
       // console.log("window", window.innerWidth);
