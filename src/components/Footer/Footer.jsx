@@ -7,8 +7,7 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="wrapper">
-        <a
-          href="#"
+        <button
           className="angle-up"
           aria-label="Back to top"
           onClick={() => {
@@ -16,7 +15,7 @@ const Footer = () => {
           }}
         >
           <Angle className="svg" />
-        </a>
+        </button>
         <Social />
         <p className="copy">
           &copy; {new Date().getFullYear()} Made by <span>Vincent Wikart</span>.
