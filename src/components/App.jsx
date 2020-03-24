@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header />
-        <Fade fraction="0.05">
+        <Fade fraction={0.05}>
           <Landing />
           <About />
           <Skillset />

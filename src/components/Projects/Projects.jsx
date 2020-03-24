@@ -20,8 +20,8 @@ const Projects = () => {
             const { title, description, infoList, url, repo, img } = project;
 
             return (
-              <Fade>
-                <div className="content" key={title}>
+              <div className="content" key={title}>
+                <Fade>
                   <div className="description">
                     <h3>{title}</h3>
                     <p>{description}</p>
@@ -66,8 +66,8 @@ const Projects = () => {
                       <LivePreview />
                     </h3>
                   </a>
-                </div>
-              </Fade>
+                </Fade>
+              </div>
             );
           })}
         </div>

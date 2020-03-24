@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ReactComponent as Angle } from "./angle-down.svg";
 import Social from "../Social/Social";
 import "./Landing.css";
@@ -77,7 +77,7 @@ const Landing = () => {
               Jump to projects
             </a>
           </Fade>
-          <Social className="icon" fade="1200" />
+          <Social className="icon" fade={1200} />
         </div>
         <a href="#about" className="angle-down" aria-label="Go to About">
           <Angle alt="About me" className="svg" />
