@@ -1,4 +1,4 @@
-header {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,9 +8,9 @@ header {
   z-index: 10;
 }
 
-header .logo {
+.navbar .logo {
   position: absolute;
   top: 25px;
   left: 25px;
 }
-/*# sourceMappingURL=Header.css.map */
+/*# sourceMappingURL=Navbar.css.map */

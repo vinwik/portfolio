@@ -1,11 +1,11 @@
-main {
+.home {
   height: 100vh;
   background: url(bg.jpg) no-repeat center/cover;
   background-attachment: fixed;
   position: relative;
 }
 
-main .bg {
+.home .bg {
   height: 100%;
   background-color: rgba(40, 44, 52, 0.8);
   display: -webkit-box;
@@ -19,48 +19,43 @@ main .bg {
           justify-content: center;
 }
 
-main p {
+.home p {
   margin: 0;
   font-weight: unset;
 }
 
-main h1,
-main h2 {
+.home h1,
+.home h2 {
   text-transform: uppercase;
 }
 
-main h1 span {
+.home h1 span {
   font-weight: 900;
 }
 
-main .icon {
-  margin-right: 20px;
+.home .social {
+  margin-top: 40px;
 }
 
-main .icon:last-child {
-  margin-right: 0;
-}
-
-main .icon .svg {
+.home .social .svg {
   height: 25px;
   width: 25px;
   padding: 0;
-  margin-top: 40px;
   -webkit-transform: unset;
           transform: unset;
 }
 
-main .angle-down {
+.home .angle-down {
   position: absolute;
   bottom: 40px;
 }
 
-main .angle-down .svg {
+.home .angle-down .svg {
   -webkit-animation: translate 2s infinite;
           animation: translate 2s infinite;
 }
 
-main .angle-down .svg path {
+.home .angle-down .svg path {
   -webkit-animation: fill 2s infinite;
           animation: fill 2s infinite;
 }
@@ -118,4 +113,4 @@ main .angle-down .svg path {
     fill: #fff;
   }
 }
-/*# sourceMappingURL=Landing.css.map */
+/*# sourceMappingURL=Home.css.map */

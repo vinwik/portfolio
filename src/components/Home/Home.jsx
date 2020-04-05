@@ -1,11 +1,11 @@
 import React from "react";
 import { ReactComponent as Angle } from "./angle-down.svg";
 import Social from "../Social/Social";
-import "./Landing.css";
+import "./Home.css";
 
 import Fade from "react-reveal/Fade";
 
-const Landing = () => {
+const Home = () => {
   // const getWindowHeight = () => {
   //   const height = window.innerHeight;
   //   return height;
@@ -62,7 +62,7 @@ const Landing = () => {
   // };
 
   return (
-    <main id="landing">
+    <header className="home">
       <div className="bg">
         <div className="wrapper">
           <Fade left>
@@ -83,8 +83,8 @@ const Landing = () => {
           <Angle alt="About me" className="svg" />
         </a>
       </div>
-    </main>
+    </header>
   );
 };
 
-export default Landing;
+export default Home;

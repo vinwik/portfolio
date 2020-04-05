@@ -5,7 +5,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer id="footer">
+    <footer className="footer">
       <div className="wrapper">
         <button
           className="angle-up"

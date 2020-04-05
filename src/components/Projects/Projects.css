@@ -31,8 +31,6 @@
   position: relative;
   -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
-  -webkit-box-shadow: 0 0 20px #111;
-          box-shadow: 0 0 20px #111;
 }
 
 .projects .screenshot::before, .projects .screenshot::after {

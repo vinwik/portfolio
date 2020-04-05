@@ -67,6 +67,16 @@
   }
 }
 
+.social-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.icon {
+  padding: 5px;
+  margin: 0 5px;
+}
+
 .svg path {
   fill: #fff;
   transition: fill 0.2s ease-in-out;
@@ -108,7 +118,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  header {
+  .navbar {
     position: absolute;
 
     .logo {
@@ -117,7 +127,7 @@
     }
   }
 
-  main {
+  .home {
     background-attachment: initial;
     height: calc(100vh - 54px);
   }
@@ -162,7 +172,7 @@
     }
   }
 
-  footer {
+  .footer {
     .social {
       .icon {
         padding: 0;
@@ -172,8 +182,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-  main {
-    background-image: url(./Landing/bg-mobile.jpg);
+  .home {
+    background-image: url(./Home/bg-mobile.jpg);
     background-attachment: initial;
 
     .angle-down {
@@ -216,7 +226,7 @@
     padding-top: unset;
   }
 
-  footer {
+  .footer {
     .wrapper {
       padding: 10px 0;
     }
