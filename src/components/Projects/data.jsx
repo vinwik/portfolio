@@ -4,7 +4,7 @@ export const projectsData = [
     description: "devChan is a social network for developers",
     infoList: [
       { info: "MERN Stack" },
-      { info: "Mongo Atlas" },
+      { info: "Redux" },
       { info: "Github integration" },
       { info: "JSON Web Token" },
     ],
