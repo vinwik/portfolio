@@ -17,7 +17,7 @@ const Contact = () => {
                 <h3>Convinced yet?</h3>
                 <p>Let me know by clicking the button right down below.</p>
                 <a href="mailto:vinwik@hotmail.com" className="btn">
-                  Call to Action
+                  Send Email
                 </a>
               </div>
             </Fade>
