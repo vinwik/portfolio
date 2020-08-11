@@ -11,7 +11,7 @@ export const projectsData = [
     ],
     url: "https://jfrprod.netlify.app/",
     repo: "https://github.com/vinwik/photograph-portfolio",
-    img: "img/jfr-prod.png",
+    img: "img/jfr-prod.jpg",
   },
   {
     title: "Mealize",
