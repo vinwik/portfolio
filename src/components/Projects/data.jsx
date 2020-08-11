@@ -1,5 +1,19 @@
 export const projectsData = [
   {
+    title: "JFR Productions",
+    description:
+      "Creative and modern photograph portfolio with stylish transitions",
+    infoList: [
+      { info: "React JS" },
+      { info: "Styled Components" },
+      { info: "React-Spring" },
+      { info: "Hand-made shared-element-transition" },
+    ],
+    url: "https://jfrprod.netlify.app/",
+    repo: "https://github.com/vinwik/photograph-portfolio",
+    img: "img/jfr-prod.png",
+  },
+  {
     title: "Mealize",
     description:
       "Organize your meals with Mealize, the recipe App you need for your meal prep. You also can add ingredients to your Cart directly from your favourite recipes, which make Mealize the perfect food shopping companion",
