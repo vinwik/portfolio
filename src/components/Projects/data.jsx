@@ -7,7 +7,7 @@ export const projectsData = [
       { info: "React JS" },
       { info: "Styled Components" },
       { info: "React-Spring" },
-      { info: "Hand-made shared-element-transition" },
+      { info: "Hand-made shared-element-transitions" },
     ],
     url: "https://jfrprod.netlify.app/",
     repo: "https://github.com/vinwik/photograph-portfolio",

@@ -22,29 +22,25 @@ const About = () => {
               <div className="description">
                 <p>
                   Hey there. <br />
-                  I'm Vincent, a front-end developer based in London.
+                  I'm Vincent, Creative Web Developer based in London.
                 </p>
                 <p>
-                  Everything started as kid in early 2000 when I got my first
-                  Pentium III 800Mhz. <br />I have been playing around for half
-                  a decade with Photoshop, Dreamweaver, Blender, RPG Maker (and
-                  Counter Strike!).
+                  Everything started as a kid in early 2000 when I acquired my
+                  first computer, a "powerful" Pentium III 800Mhz.
                 </p>
                 <p>
-                  However, Life led me to Finance, for too long... <br />
-                  But, here I am! Back on track and determined to follow my
-                  path.
+                  Ever since I have been experimenting with a variety of tools
+                  and technologies including photo editing, 3d modeling, music
+                  creation and of course, web development.
                 </p>
                 <p>
-                  Feel free to{" "}
+                  If you ready to put your trust in a passionate developer with
+                  2.5 years of experience in freelancing, please feel free to{" "}
                   <a href="#contact">
                     <span className="link">contact me</span>
-                  </a>{" "}
-                  if you want to have a chat.
+                  </a>
+                  .
                 </p>
-                {/* <a href="#projects" className="btn color-main">
-              Contact me
-            </a> */}
               </div>
             </Fade>
           </div>
